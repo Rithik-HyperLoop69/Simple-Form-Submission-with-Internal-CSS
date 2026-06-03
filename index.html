@@ -5,35 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Submission to RITHIK</title>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Caveat+Brush&family=Patrick+Hand&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Zen+Dots&display=swap"
+        rel="stylesheet">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Exo+2:wght@300;400;500&display=swap');
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 30px;
+            padding: 20px;
+            background: url('https://images.hdqwalls.com/download/no-mans-sky-game-2019-jt-3840x2400.jpg') no-repeat;
+            align-items: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #b9d8ff;
+            font-family: "Zen Dots", sans-serif;
         }
 
         form {
-            background-color: white;
-            max-width: 500px;
+            background-color: rgb(245, 72, 72);
+            max-width: 600px;
             margin: auto;
-            padding: 25px;
+            margin-bottom: 0px;
+            padding: 50px;
+            border: 3px solid rgba(31, 12, 12, 0.427);
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(117, 36, 36, 0.1);
+            background: transparent;
+            backdrop-filter: blur(20px);
+
         }
 
         div {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        div:hover {
+            transition: ease-in;
+            transition-duration: 0.5s;
         }
 
         label {
             font-weight: bold;
+            color: rgb(255, 255, 200);
+            font-family: "Zen Dots", sans-serif;
+            text-decoration: none;
         }
 
         input,
@@ -42,17 +68,52 @@
             padding: 10px;
             margin-top: 5px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #021374;
+            box-shadow: 2px;
             box-sizing: border-box;
+            background-color: #0f335a;
+            font-family: "Caveat Brush", cursive;
+            font-size: 15px;
         }
 
         input[type="radio"],
         input[type="checkbox"] {
             width: auto;
             margin-right: 5px;
+            box-shadow: 10px;
+            font-family: "Caveat Brush", cursive;
+            color: antiquewhite;
+
         }
 
-        
+        input:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #005783;
+            font-family: "Caveat Brush", cursive;
+            color: antiquewhite;
+        }
+
+        textarea {
+            outline: none;
+            box-shadow: 10px;
+            border: 1px solid #005783;
+            font-family: "Patrick Hand", cursive;
+            color: antiquewhite;
+            font-size: 20px;
+        }
+
+        textarea:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #005783;
+            font-family: "Patrick Hand", cursive;
+            color: antiquewhite;
+            font-size: 20px;
+
+        }
+
+
         button {
             background-color: #007BFF;
             color: white;
@@ -64,15 +125,148 @@
             transition: ease-in;
             transition-duration: 0.5s;
             width: 100%;
+            font-family: "Playwrite GB J", cursive;
         }
 
         button:hover {
             text-align: center;
-            background-color: #0056b3;
+            background-color: #0f335a;
             transition-duration: 0.5s;
-            border:4px solid #0056b3 ;
+            border: 4px solid #10253b;
 
         }
+
+        .page-wrap {
+            margin-top: 0;
+            background: #0d1a2e;
+            border-radius: var(--border-radius-lg);
+            border-radius: 15px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .footer-bar {
+            background: #071020;
+            border-top: 1px solid #1a3a5c;
+            padding: 1.5rem 2rem 1.25rem;
+        }
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #e8f4ff;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-brand span {
+            color: #3a9bdc;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-divider {
+            height: 0.5px;
+            background: #1a3a5c;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer-copy {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 12px;
+            font-weight: 300;
+            color: #2e5270;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 0;
+        }
+
+        .copy-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #1e4d70;
+            border-radius: 50%;
+            font-size: 9px;
+            color: #3a9bdc;
+            flex-shrink: 0;
+        }
+
+        .copy-name {
+            color: #3a9bdc;
+            font-weight: 500;
+        }
+
+        .footer-year {
+            color: #3a9bdc;
+        }
+
+        .footer-badge {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 11px;
+            color: #1e4d70;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .footer-dots {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .dot {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #1a3a5c;
+        }
+
+        .dot.active {
+            background: #3a9bdc;
+        }
+
+        footer {
+            margin: 0px;
+            padding: 0px;
+            padding-bottom: 0px;
+            display: flexbox;
+            border: 3px;
+            border-radius: 3px;
+
+        }
+
+  footer div,
+footer .page-wrap,
+footer .footer-bar,
+footer .footer-top,
+footer .footer-bottom,
+footer .footer-dots {
+    margin-bottom: 0;
+}
     </style>
 </head>
 
@@ -82,13 +276,7 @@
 
     <form action="https://formsubmit.co/silentdude689@gmail.com" method="POST">
 
-        <!-- Disable captcha -->
         <input type="hidden" name="_captcha" value="false">
-
-        <!-- Optional success page -->
-        <!--
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
-        -->
 
         <div>
             <label for="username">Enter your username</label>
@@ -107,7 +295,6 @@
 
         <div>
             <label>Select Your Gender :</label>
-            <br><br>
 
             <input type="radio" id="male" name="gender" value="Male" required>
             <label for="male">Male</label>
@@ -128,10 +315,41 @@
             <input type="checkbox" id="sub" name="subscription" value="Subscribed">
             <label for="sub">Subscribe to Newsletter</label>
         </div>
-
         <button type="submit">Send to Rithik</button>
 
     </form>
+    <footer>
+
+        <div class="page-wrap">
+            <div class="footer-bar">
+                <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Footer for
+                    Information Form Submission</h2>
+
+                <div class="footer-top">
+                    <div class="footer-brand">RITHIK<span>.</span>DEV</div>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <div class="footer-bottom">
+                    <p class="footer-copy">
+                        <span class="copy-icon">©</span>
+                        <span class="footer-year">2026</span>
+                        <span class="copy-name">Rithik</span>
+                        <span style="color:#1e4d70;">— All rights reserved</span>
+                    </p>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                        <div class="footer-dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot active"></div>
+                        </div>
+                        <span class="footer-badge">Information Form v1.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
