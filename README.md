@@ -1,5 +1,7 @@
 # 📋 Information Form Submission
 
+🔗 **Live Demo:** [simple-form-submission-with-interna.vercel.app](https://simple-form-submission-with-interna.vercel.app/)
+
 A stylish, space-themed HTML form that collects user information and sends it directly to an email address via [FormSubmit](https://formsubmit.co/).
 
 ---
@@ -58,7 +60,7 @@ Upload `index.html` to any static hosting platform:
 
 - **GitHub Pages** — Push to a repo and enable Pages in settings
 - **Netlify** — Drag and drop the file at [netlify.com/drop](https://app.netlify.com/drop)
-- **Vercel** — Deploy via the Vercel CLI or dashboard
+- **Vercel** ✅ *(currently deployed)* — [simple-form-submission-with-interna.vercel.app](https://simple-form-submission-with-interna.vercel.app/)
 
 ### 4. First Submission Activation
 FormSubmit requires a **one-time email confirmation** the first time a form is submitted to a new email address. Check `silentdude689@gmail.com` after the first submission and click the confirmation link.
