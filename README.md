@@ -1,4 +1,4 @@
-# 📋 Information Form Submission
+# Information Form Submission
 
 🔗 **Live Demo:** [simple-form-submission-with-interna.vercel.app](https://simple-form-submission-with-interna.vercel.app/)
 
@@ -6,13 +6,13 @@ A stylish, space-themed HTML form that collects user information and sends it di
 
 ---
 
-## 🌌 Overview
+## Overview
 
 This is a single-page static web project featuring a glassmorphism-styled form set against a No Man's Sky game wallpaper background. It requires no backend — form submissions are handled entirely by the FormSubmit service.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Email delivery** — Submissions are sent directly to `silentdude689@gmail.com` via FormSubmit (no backend needed)
 - **Spam protection** — CAPTCHA is disabled for a smoother user experience (configurable)
@@ -23,7 +23,7 @@ This is a single-page static web project featuring a glassmorphism-styled form s
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -34,20 +34,20 @@ No external JS files, no build tools, no dependencies beyond Google Fonts.
 
 ---
 
-## 📝 Form Fields
+## Form Fields
 
 | Field | Type | Required |
 |---|---|---|
-| Username | Text | ✅ Yes |
-| Phone Number | Number | ✅ Yes |
-| Email | Email | ✅ Yes |
-| Gender | Radio (Male / Female / Other) | ✅ Yes |
-| Comment | Textarea | ❌ No |
-| Newsletter Subscription | Checkbox | ❌ No |
+| Username | Text | Yes |
+| Phone Number | Number | Yes |
+| Email | Email | Yes |
+| Gender | Radio (Male / Female / Other) | Yes |
+| Comment | Textarea | No |
+| Newsletter Subscription | Checkbox | No |
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### 1. Clone or Download
 Download `index.html` or copy the source code into a new file.
@@ -60,14 +60,14 @@ Upload `index.html` to any static hosting platform:
 
 - **GitHub Pages** — Push to a repo and enable Pages in settings
 - **Netlify** — Drag and drop the file at [netlify.com/drop](https://app.netlify.com/drop)
-- **Vercel** ✅ *(currently deployed)* — [simple-form-submission-with-interna.vercel.app](https://simple-form-submission-with-interna.vercel.app/)
+- **Vercel** *(currently deployed)* — [simple-form-submission-with-interna.vercel.app](https://simple-form-submission-with-interna.vercel.app/)
 
 ### 4. First Submission Activation
 FormSubmit requires a **one-time email confirmation** the first time a form is submitted to a new email address. Check `silentdude689@gmail.com` after the first submission and click the confirmation link.
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 To change the recipient email, update the `action` attribute in the `<form>` tag:
 
@@ -93,7 +93,7 @@ Other useful FormSubmit options you can add as hidden inputs:
 
 ---
 
-## 🎨 Design Details
+## Design Details
 
 | Property | Value |
 |---|---|
@@ -106,7 +106,7 @@ Other useful FormSubmit options you can add as hidden inputs:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** — Semantic structure
 - **CSS3** — Styling, backdrop filters, Google Fonts, transitions
